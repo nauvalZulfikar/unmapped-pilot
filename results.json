@@ -1,0 +1,170 @@
+{
+  "S0 independent": {
+    "naive union": {
+      "rel_bias": -0.13069230293694534,
+      "rel_rmse": 0.13071633151023065,
+      "coverage": null
+    },
+    "Chao lower bound": {
+      "rel_bias": 0.05095003514987253,
+      "rel_rmse": 0.051300710326011745,
+      "coverage": null
+    },
+    "triple collocation": {
+      "rel_bias": -0.49972015724685825,
+      "rel_rmse": 0.49973380758786184,
+      "coverage": null
+    },
+    "log-linear (BIC)": {
+      "rel_bias": 2.686992276093465e-05,
+      "rel_rmse": 0.0036294996895658307,
+      "coverage": 0.85
+    },
+    "latent class (BIC, K<=2)": {
+      "rel_bias": 8.908864341252258e-06,
+      "rel_rmse": 0.0035612671594177038,
+      "coverage": 0.96
+    },
+    "_share_seen": 0.8693076970630547
+  },
+  "S1 shared imagery": {
+    "naive union": {
+      "rel_bias": -0.16769015619534627,
+      "rel_rmse": 0.16773627573855054,
+      "coverage": null
+    },
+    "Chao lower bound": {
+      "rel_bias": -0.013836656112550694,
+      "rel_rmse": 0.0149139693091712,
+      "coverage": null
+    },
+    "triple collocation": {
+      "rel_bias": -0.500293173977987,
+      "rel_rmse": 0.5003052441470678,
+      "coverage": null
+    },
+    "log-linear (BIC)": {
+      "rel_bias": -0.0002632174320470252,
+      "rel_rmse": 0.005195775627821851,
+      "coverage": 0.92
+    },
+    "latent class (BIC, K<=2)": {
+      "rel_bias": -0.0009079256574113024,
+      "rel_rmse": 0.008220621344873622,
+      "coverage": 0.945
+    },
+    "_share_seen": 0.8323098438046537
+  },
+  "S2 + size heterogeneity": {
+    "naive union": {
+      "rel_bias": -0.20963945655278834,
+      "rel_rmse": 0.20967908281492836,
+      "coverage": null
+    },
+    "Chao lower bound": {
+      "rel_bias": -0.07077531316268752,
+      "rel_rmse": 0.07098494603157385,
+      "coverage": null
+    },
+    "triple collocation": {
+      "rel_bias": -0.4995894107875594,
+      "rel_rmse": 0.4996029586810745,
+      "coverage": null
+    },
+    "log-linear (BIC)": {
+      "rel_bias": -0.005631880713991397,
+      "rel_rmse": 0.011678265703369054,
+      "coverage": 0.905
+    },
+    "latent class (BIC, K<=2)": {
+      "rel_bias": -0.05129663414779726,
+      "rel_rmse": 0.05212330877645915,
+      "coverage": 0.01
+    },
+    "_share_seen": 0.7903605434472118
+  },
+  "S3 + weak OSM": {
+    "naive union": {
+      "rel_bias": -0.20816856956831667,
+      "rel_rmse": 0.20818984966550358,
+      "coverage": null
+    },
+    "Chao lower bound": {
+      "rel_bias": -0.020991984289552547,
+      "rel_rmse": 0.02193409914182986,
+      "coverage": null
+    },
+    "triple collocation": {
+      "rel_bias": -0.4998145531499334,
+      "rel_rmse": 0.4998287081720033,
+      "coverage": null
+    },
+    "log-linear (BIC)": {
+      "rel_bias": -0.00034065404410661216,
+      "rel_rmse": 0.006927930063936455,
+      "coverage": 0.915
+    },
+    "latent class (BIC, K<=2)": {
+      "rel_bias": -0.0002247196814447959,
+      "rel_rmse": 0.011095660926300334,
+      "coverage": 0.97
+    },
+    "_share_seen": 0.7918314304316835
+  },
+  "S4 + 5% matching error": {
+    "naive union": {
+      "rel_bias": -0.10339309723884454,
+      "rel_rmse": 0.10353433579391617,
+      "coverage": null
+    },
+    "Chao lower bound": {
+      "rel_bias": 0.16675799405680114,
+      "rel_rmse": 0.16702849782745416,
+      "coverage": null
+    },
+    "triple collocation": {
+      "rel_bias": -0.4999028654797668,
+      "rel_rmse": 0.4999139716289023,
+      "coverage": null
+    },
+    "log-linear (BIC)": {
+      "rel_bias": 0.21491984292269278,
+      "rel_rmse": 0.2161298368661168,
+      "coverage": 0.0
+    },
+    "latent class (BIC, K<=2)": {
+      "rel_bias": 0.20283573892669907,
+      "rel_rmse": 0.2035832502690435,
+      "coverage": 0.0
+    },
+    "_share_seen": 0.8966069027611554
+  },
+  "S5 no roll (3 lists)": {
+    "naive union": {
+      "rel_bias": -0.2692034152051641,
+      "rel_rmse": 0.26925114243245535,
+      "coverage": null
+    },
+    "Chao lower bound": {
+      "rel_bias": -0.08317589075633544,
+      "rel_rmse": 0.08350123656487735,
+      "coverage": null
+    },
+    "triple collocation": {
+      "rel_bias": -0.4998253256048511,
+      "rel_rmse": 0.49983645278109573,
+      "coverage": null
+    },
+    "log-linear (BIC)": {
+      "rel_bias": -0.07931959992679735,
+      "rel_rmse": 0.07991042970767573,
+      "coverage": 0.0
+    },
+    "latent class (BIC, K<=2)": {
+      "rel_bias": -0.17349783294623472,
+      "rel_rmse": 0.17357717075053555,
+      "coverage": 0.0
+    },
+    "_share_seen": 0.7307965847948359
+  }
+}
