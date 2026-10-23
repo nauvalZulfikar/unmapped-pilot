@@ -76,9 +76,10 @@ def naive(h, vil):
 
 
 def chao(h, vil):
-    """Chao (1987) lower bound from the frequency of capture counts."""
+    """Chao (1987) lower bound from the frequency of capture counts, with the (k-1)/k factor for k lists."""
+    k = h.shape[1]
     f = np.bincount(h.sum(axis=1), minlength=3)
-    return h.shape[0] + (f[1] ** 2 / (2 * f[2]) if f[2] else np.nan), None
+    return h.shape[0] + ((k - 1) / k * f[1] ** 2 / (2 * f[2]) if f[2] else np.nan), None
 
 
 def poisson_glm(X, y, iters=50):

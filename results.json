@@ -6,8 +6,8 @@
       "coverage": null
     },
     "Chao lower bound": {
-      "rel_bias": 0.05095003514987253,
-      "rel_rmse": 0.051300710326011745,
+      "rel_bias": 0.005539450628168063,
+      "rel_rmse": 0.007354817498958232,
       "coverage": null
     },
     "triple collocation": {
@@ -34,8 +34,8 @@
       "coverage": null
     },
     "Chao lower bound": {
-      "rel_bias": -0.013836656112550694,
-      "rel_rmse": 0.0149139693091712,
+      "rel_bias": -0.0523000311332496,
+      "rel_rmse": 0.05251116315266089,
       "coverage": null
     },
     "triple collocation": {
@@ -62,8 +62,8 @@
       "coverage": null
     },
     "Chao lower bound": {
-      "rel_bias": -0.07077531316268752,
-      "rel_rmse": 0.07098494603157385,
+      "rel_bias": -0.1054913490102127,
+      "rel_rmse": 0.10559722651637796,
       "coverage": null
     },
     "triple collocation": {
@@ -90,8 +90,8 @@
       "coverage": null
     },
     "Chao lower bound": {
-      "rel_bias": -0.020991984289552547,
-      "rel_rmse": 0.02193409914182986,
+      "rel_bias": -0.06778613060924359,
+      "rel_rmse": 0.06798308294179498,
       "coverage": null
     },
     "triple collocation": {
@@ -118,8 +118,8 @@
       "coverage": null
     },
     "Chao lower bound": {
-      "rel_bias": 0.16675799405680114,
-      "rel_rmse": 0.16702849782745416,
+      "rel_bias": 0.0992202212328897,
+      "rel_rmse": 0.09954877757384209,
       "coverage": null
     },
     "triple collocation": {
@@ -146,8 +146,8 @@
       "coverage": null
     },
     "Chao lower bound": {
-      "rel_bias": -0.08317589075633544,
-      "rel_rmse": 0.08350123656487735,
+      "rel_bias": -0.14518506557261165,
+      "rel_rmse": 0.14531463791615382,
       "coverage": null
     },
     "triple collocation": {

@@ -32,7 +32,7 @@ Microsoft, Google, OpenStreetMap and a property-tax roll. Capture depends on
 ## Estimators
 
 - **naive union**: buildings seen by any list.
-- **Chao lower bound**: n + f1²/(2 f2).
+- **Chao lower bound**: n + ((k-1)/k) f1²/(2 f2), for k lists.
 - **triple collocation**: per-village counts from the three open lists,
   error variances by the covariance method, inverse-variance merge. It is
   scaled to Microsoft, so it estimates what the lists hold, not what none holds.
@@ -50,22 +50,24 @@ Bias and RMSE are relative to the true count. Full table in `results.md`.
 
 | Scenario | Seen by any list | Naive | Chao | Log-linear (coverage) | Latent class (coverage) |
 |---|---|---|---|---|---|
-| S0 independent | 86.9% | -13.1% | +5.1% | +0.0% (85%) | +0.0% (96%) |
-| S1 shared imagery | 83.2% | -16.8% | -1.4% | -0.0% (92%) | -0.1% (94%) |
-| S2 + size | 79.0% | -21.0% | -7.1% | -0.6% (90%) | -5.1% (1%) |
-| S3 + weak OSM | 79.2% | -20.8% | -2.1% | -0.0% (92%) | -0.0% (97%) |
-| S4 + 5% matching error | 89.7% | -10.3% | +16.7% | +21.5% (0%) | +20.3% (0%) |
-| S5 no roll | 73.1% | -26.9% | -8.3% | -7.9% (0%) | -17.3% (0%) |
+| S0 independent | 86.9% | -13.1% | +0.6% | +0.0% (85%) | +0.0% (96%) |
+| S1 shared imagery | 83.2% | -16.8% | -5.2% | -0.0% (92%) | -0.1% (94%) |
+| S2 + size | 79.0% | -21.0% | -10.5% | -0.6% (90%) | -5.1% (1%) |
+| S3 + weak OSM | 79.2% | -20.8% | -6.8% | -0.0% (92%) | -0.0% (97%) |
+| S4 + 5% matching error | 89.7% | -10.3% | +9.9% | +21.5% (0%) | +20.3% (0%) |
+| S5 no roll | 73.1% | -26.9% | -14.5% | -7.9% (0%) | -17.3% (0%) |
 
 Triple collocation sits at -50% in every scenario, because it reports
-Microsoft's scale.
+Microsoft's scale. "Seen by any list" counts units against the true count, so
+in S4 it rises above S1: each failed match adds a unit that is not a new building.
 
 What this shows:
 
 1. Dependence between the imagery lists is handled. With four lists, log-linear
    models recover the count within 1% under shared imagery and a weak OSM.
-2. **Matching error dominates.** 5% failed matches inflate every estimator by
-   about 20% and no interval covers the truth. Carrying matching error through
+2. **Matching error dominates.** 5% failed matches inflate both model-based
+   estimators by about 20% and no interval covers the truth. They also push
+   the Chao lower bound 10% above the true count. Carrying matching error through
    the estimate is therefore the core methodological task, not a detail.
 3. **The roll matters.** Without an administrative list made independently of
    imagery, both models under-count by 8 to 17%.
